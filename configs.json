@@ -39,7 +39,7 @@
         "test_newLandingPage.py": {
             "metadata": {
                 "name": "신규 문의하기 랜딩 페이지",
-                "description": "국문 - A, B, C 별로 하나씩 점검 \n                  영문 - 하나 점검"
+                "description": "국문 - A, B, C 별로 하나씩 점검 \n                  영문 - solution, product 별로 하나씩 점검"
             },
             "options": {
                 "submit": false,
