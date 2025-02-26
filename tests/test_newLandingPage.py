@@ -87,7 +87,7 @@ async def wrapsody_contactUs_KR_Main(settings, test_logger):
             
                 return True
    
-# type ??
+# type products
 @function_logging
 async def wrapsody_contactUs_EN_Main(settings, test_logger):
     
@@ -159,7 +159,7 @@ async def wrapsody_contactUs_EN_Main(settings, test_logger):
                 await page12.get_by_placeholder("Work Email*").press("Tab")
                 await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
                 await page12.get_by_label("Search Engine (Google, Bing,").check()
-                await page12.get_by_label("I agree to the collection and").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
 
                 # 상담 신청하기 버튼 클릭
                 ###await page12.get_by_role("button", name="Book Now").click()
@@ -236,7 +236,7 @@ async def wrapsodyECO_contactUs_KR_Main(settings, test_logger):
                 return True
 
  
-# type ??
+# type products
 @function_logging
 async def wrapsodyECO_contactUs_EN_Main(settings, test_logger):
     
@@ -291,7 +291,7 @@ async def wrapsodyECO_contactUs_EN_Main(settings, test_logger):
                 await page1.get_by_placeholder("Work Email*").press("Tab")
                 await page1.get_by_placeholder("Inquiry Details*  (For a").fill("hqtest")
                 await page1.get_by_label("Search Engine (Google, Bing,").check()
-                await page1.get_by_label("I agree to the collection and").check()
+                await page1.get_by_label("I'd like Fasoo to use my").check()
                 ###await page1.get_by_role("button", name="Book Now").click()
                 # await expect(page1.get_by_text("Your submission was")).to_be_visible()
                 # test_logger.info("[메인] Wrapsody eCo 문의하기[EN] - 이상 없음")
@@ -424,7 +424,7 @@ async def wrapsodyDrive_contactUs_KR_Main(settings, test_logger):
                 ### page1.get_by_role("button", name="상담 신청하기").click()
         
                 
-# type ??
+# type products
 @function_logging
 async def wrapsodyDrive_contactUs_EN_Main(settings, test_logger):
     
@@ -481,7 +481,7 @@ async def wrapsodyDrive_contactUs_EN_Main(settings, test_logger):
                 await page1.get_by_placeholder("Work Email*").press("Tab")
                 await page1.get_by_placeholder("Inquiry Details*  (For a").fill("hqtest")
                 await page1.get_by_label("Search Engine (Google, Bing,").check()
-                await page1.get_by_label("I agree to the collection and").check()
+                await page1.get_by_label("I'd like Fasoo to use my").check()
                 ### await page1.get_by_role("button", name="Book Now").click()
                 # await expect(page1.get_by_text("Your submission was")).to_be_visible()
                 return True
@@ -613,7 +613,7 @@ async def fss_contactUs_KR( settings, test_logger):
                 #(f"[메인] Fasoo FSS[KR] - 이상 없음")
                 return True
    
-# ??
+# products
 @function_logging
 async def fss_contactUs_EN( settings, test_logger):
      
@@ -683,7 +683,7 @@ async def fss_contactUs_EN( settings, test_logger):
                 await page12.get_by_placeholder("Work Email*").press("Tab")
                 await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
                 await page12.get_by_label("Search Engine (Google, Bing,").check()
-                await page12.get_by_label("I agree to the collection and").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
 
                 # 상담 신청하기 버튼 클릭
                 #await page12.get_by_role("button", name="Book Now").click()
@@ -806,7 +806,7 @@ async def fsp_contactUs_EN( settings, test_logger):
 
                 # contact us 버튼 클릭 후 팝업 대기
                 async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
-                    await page.locator("section").filter(has_text="Empower your print security").get_by_role("link").click()
+                    await page.locator("section").filter(has_text="Establish a secure printing").get_by_role("link").click()
 
                 # 팝업 페이지를 page12로 받아옴
                 page12 = await page12_info.value
@@ -832,7 +832,7 @@ async def fsp_contactUs_EN( settings, test_logger):
                 await page12.get_by_placeholder("Work Email*").press("Tab")
                 await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
                 await page12.get_by_label("Search Engine (Google, Bing,").check()
-                await page12.get_by_label("I agree to the collection and").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
 
                 # 상담 신청하기 버튼 클릭
                 #await page12.get_by_role("button", name="Book Now").click()
@@ -911,9 +911,9 @@ async def fed_m_contactUs_KR( settings, test_logger):
                 return True
 
 
-# type ???
+# type products
 @function_logging
-async def fed_m_contactUs_EN( settings, test_logger):
+async def fed_m_contactUs_EN(settings, test_logger):
 
 
      
@@ -983,7 +983,7 @@ async def fed_m_contactUs_EN( settings, test_logger):
                 await page12.get_by_placeholder("Work Email*").press("Tab")
                 await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
                 await page12.get_by_label("Search Engine (Google, Bing,").check()
-                await page12.get_by_label("I agree to the collection and").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
 
                 # 상담 신청하기 버튼 클릭
                 #await page12.get_by_role("button", name="Book Now").click()
@@ -1203,7 +1203,7 @@ async def fc_br_contactUs_KR( settings, test_logger):
                 return True
 
 
-# type ??
+# type products
 @function_logging
 async def fc_br_contactUs_EN( settings, test_logger):
      
@@ -1273,7 +1273,7 @@ async def fc_br_contactUs_EN( settings, test_logger):
                 await page12.get_by_placeholder("Work Email*").press("Tab")
                 await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
                 await page12.get_by_label("Search Engine (Google, Bing,").check()
-                await page12.get_by_label("I agree to the collection and").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
 
                 # 상담 신청하기 버튼 클릭
                 #await page12.get_by_role("button", name="Book Now").click()
@@ -1352,7 +1352,7 @@ async def film_contactUs_KR( settings, test_logger):
                 return True
 
 
-# type ??
+# type products
 @function_logging
 async def film_contactUs_EN( settings, test_logger):
      
@@ -1422,7 +1422,7 @@ async def film_contactUs_EN( settings, test_logger):
                 await page12.get_by_placeholder("Work Email*").press("Tab")
                 await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
                 await page12.get_by_label("Search Engine (Google, Bing,").check()
-                await page12.get_by_label("I agree to the collection and").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
 
                 # 상담 신청하기 버튼 클릭
                 #await page12.get_by_role("button", name="Book Now").click()
@@ -1431,7 +1431,7 @@ async def film_contactUs_EN( settings, test_logger):
                 return True
 
 
-# type ??
+# type products
 @function_logging
 async def frv_contactUs_EN( settings, test_logger):
      
@@ -1502,7 +1502,7 @@ async def frv_contactUs_EN( settings, test_logger):
                 await page12.get_by_placeholder("Work Email*").press("Tab")
                 await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
                 await page12.get_by_label("Search Engine (Google, Bing,").check()
-                await page12.get_by_label("I agree to the collection and").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
 
                 # 상담 신청하기 버튼 클릭
                 #await page12.get_by_role("button", name="Book Now").click()
@@ -1722,7 +1722,7 @@ async def dspm_contactUs_KR( settings, test_logger):
                 return True
 
 
-# type ??
+# type products
 @function_logging
 async def dspm_fdr_contactUs_EN( settings, test_logger):
      
@@ -1766,7 +1766,7 @@ async def dspm_fdr_contactUs_EN( settings, test_logger):
 
                 # contact us 버튼 클릭 후 팝업 대기
                 async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
-                    await page.locator("section").filter(has_text="Data Security Posture").get_by_role("link").click()
+                    await page.locator("section").filter(has_text="Discover, classify, and control sensitive data Contact Us").get_by_role("link").click()
 
                 # 팝업 페이지를 page12로 받아옴
                 page12 = await page12_info.value
@@ -1792,7 +1792,7 @@ async def dspm_fdr_contactUs_EN( settings, test_logger):
                 await page12.get_by_placeholder("Work Email*").press("Tab")
                 await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
                 await page12.get_by_label("Search Engine (Google, Bing,").check()
-                await page12.get_by_label("I agree to the collection and").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
 
                 # 상담 신청하기 버튼 클릭
                 #await page12.get_by_role("button", name="Book Now").click()
@@ -1873,8 +1873,8 @@ async def crypto_contactUs_KR( settings, test_logger):
 
 
             
-    
-"""@function_logging
+# type products    
+@function_logging
 async def AIRPrivacy_contactUs_EN_Main(settings, test_logger):
     
         url = "https://en.fasoo.com/"
@@ -1894,41 +1894,1983 @@ async def AIRPrivacy_contactUs_EN_Main(settings, test_logger):
                 )
                 context.set_default_timeout(20000)
                 page = await context.new_page()
-                await page.goto(url)    
-                await page.wait_for_load_state("networkidle")
+                await page.goto(url)
 
-                # Get the navigation bar 
-                nav_menu = page.get_by_role("navigation")
-                products_link = nav_menu.get_by_role("link", name="Products")
+                # 'Products' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Products")
+                await link.hover()  
+                
+                # 'DSPM 탭이 나타날 때까지 기다림
+                dspm_tab = page.get_by_role("tab", name="AI-Ready Security")
+                await expect(dspm_tab).to_be_visible()  
 
-                # Verify Products link is visible
-                await expect(products_link).to_be_visible()
-                await products_link.hover()
+                # 'DSPM' 탭 클릭
+                await dspm_tab.click()
 
-                # Go to wrapsody link
-                link = page.get_by_role("link", name="")
-                await expect(link).to_be_visible()
-                await link.click()
-                await page.wait_for_url("")
+                # 'FDR' 링크에 hover
+                FDR_link = page.get_by_role("link", name="Fasoo AI-R Privacy AI-Powered")
+                await FDR_link.hover()
+                
+                # 'FDR' 링크 클릭
+                await FDR_link.click()
+                await page.wait_for_url("https://en.fasoo.com/products/fasoo-ai-r-privacy/")
 
-                await page.get_by_placeholder("Name*").click()
-                await page.get_by_placeholder("Name*").fill("hqtest")
-                await page.get_by_placeholder("Name*").press("Tab")
-                await page.get_by_placeholder("Company*").fill("hqtest")
-                await page.get_by_placeholder("Company*").press("Tab")
-                await page.get_by_placeholder("Department*").fill("hqtest")
-                await page.get_by_placeholder("Department*").press("Tab")
-                await page.get_by_placeholder("Job Title*").fill("hqtest")
-                await page.get_by_placeholder("Job Title*").press("Tab")
-                await page.get_by_placeholder("Phone*").fill("0000000000")
-                await page.get_by_placeholder("Phone*").press("Tab")
-                await page.get_by_placeholder("Work Email*").fill("hqtest@fasoo.com")
-                await page.get_by_placeholder("Work Email*").press("Tab")
-                await page.get_by_placeholder("Inquiry Details*  (For a").fill("hqtest")
-                await page.get_by_text("Search Engine (Google, Bing,").click()
-                await page.locator("span").filter(has_text="I'd like Fasoo to use my").click()
-                await page.once("dialog", lambda dialog: dialog.dismiss())"""
-                # await page.get_by_role("button", name="Book Now").click()
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    page.locator("section").filter(has_text="Automate data privacy with AI").get_by_role("link").click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/product?type=ai-r-privacy")  # URL이 일치할 때까지 대기
+                 #(f"[메인] DSPM-FDR 문의하기[EN] - 팝업 페이지 로딩 완료")
+
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Work Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Work Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+##################################
+########SOULTIONS ONLY############
+##################################
+
+# type soultions
+@function_logging
+async def content_virtualization_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="AI")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="Content Virtualization")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/strategies/content-virtualization-and-secure-collaboration/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=content-virtualization")  # URL이 일치할 때까지 대기
+
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+# type soultions
+@function_logging
+async def content_management_AI_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="AI")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="Content Management for AI")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/strategies/content-management-for-ai/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    page.locator("section").filter(has_text="Learn more about Content").get_by_role("link").click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=content-management-for-ai")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+# type soultions
+@function_logging
+async def zero_trust_DSP_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Security & Governance")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="Zero Trust DSP")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/strategies/data-classification-data-protection-data-visibility/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    page.locator("#content").get_by_role("link", name="Contact Us").click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=zero-trust-security")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+# type soultions
+@function_logging
+async def dspm_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Security & Governance")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="DSPM")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/strategies/data-security-platform-and-data-centric-security/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=dspm")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+
+# type soultions
+@function_logging
+async def enterprise_DRM_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Security & Governance")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="Enterprise DRM", exact=True)
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/strategies/enterprise-drm/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=edrm")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+
+# type soultions
+@function_logging
+async def print_security_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Security & Governance")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="Print Security")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/strategies/print-security/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=print-security")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+
+# type soultions
+@function_logging
+async def screen_security_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Security & Governance")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="Screen Security")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/strategies/screen-security")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    page.locator("#content").get_by_role("link", name="Contact Us").click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=screen-security")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+# type soultions
+@function_logging
+async def cad_file_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Security & Governance")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="CAD File Security")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/strategies/cad-file-security/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    page.locator("#content").get_by_role("link", name="Contact Us").click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=cad-file-security")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+
+
+# type soultions
+@function_logging
+async def cloud_security_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Use Case")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="Cloud Security")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/cloud-security/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=cloud-security")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True                
+
+
+
+# type soultions
+@function_logging
+async def compliance_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Use Case")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="Compliance")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/compliance/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=compliance")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True    
+
+
+
+# type soultions
+@function_logging
+async def insider_threat_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Use Case")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="Insider Threat")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/insider-threat/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=insider-threat")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True    
+
+
+
+# type soultions
+@function_logging
+async def ip_protection_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Use Case")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="IP Protection")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/ip-protection/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=ip-protection")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True    
+
+
+
+# type soultions
+@function_logging
+async def remote_worker_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Use Case")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="Remote Worker")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/remote-worker/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=remote-worker")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True    
+
+
+
+
+ # type soultions
+@function_logging
+async def unstructured_data_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Use Case")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="Unstructured Data")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/unstructured-data/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=unstructured-data")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True                   
+
+
+
+ # type soultions
+@function_logging
+async def endpoint_security_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Use Case")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("link", name="Unstructured Data")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/endpoint-security/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=endpoint-security")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True  
+
+ # type soultions
+@function_logging
+async def business_services_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Industry")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("tabpanel").get_by_role("link", name="Business Services")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/business-services/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=business-services")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+
+ # type soultions
+@function_logging
+async def energy_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Industry")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("tabpanel").get_by_role("link", name="Energy")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/energy/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=energy")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+
+ # type soultions
+@function_logging
+async def financial_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Industry")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("tabpanel").get_by_role("link", name="Financial")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/financial/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=financial")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+
+ # type soultions
+@function_logging
+async def healthcare_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Industry")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("tabpanel").get_by_role("link", name="Healthcare")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/healthcare/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=healthcare")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+
+ # type soultions
+@function_logging
+async def insurance_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Industry")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("tabpanel").get_by_role("link", name="Insurance")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/insurance/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=insurance")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+
+
+ # type soultions
+@function_logging
+async def public_sector_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Industry")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("tabpanel").get_by_role("link", name="Public Sector")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/public-sector/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=public-sector")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+
+ # type soultions
+@function_logging
+async def legal_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Industry")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("tabpanel").get_by_role("link", name="Legal")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/legal/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=legal")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+
+ # type soultions
+@function_logging
+async def egnyte_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Integration")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("tabpanel").get_by_role("link", name="Egnyte Integration")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/strategies/egnyte-integration/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    page.locator("#content").get_by_role("link", name="Contact Us").click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=egnyte-integration")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+
+
+# type soultions
+@function_logging
+async def imanage_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Integration")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("tabpanel").get_by_role("link", name="iManage Integration")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/strategies/imanage-integration/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    page.locator("#content").get_by_role("link", name="Contact Us").click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=imanage-integration")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
+ # type soultions
+@function_logging
+async def manufacturing_EN(settings, test_logger):
+        url = "https://en.fasoo.com/"
+        current_module = Path(__file__).name  # 현재 모듈 이름 가져오기
+        browser_type = "chromium"
+        width = 1920
+        height = 1080
+        accept_download = True
+        async with async_playwright() as p:
+            if browser_type == "chromium":
+                browser = await p.chromium.launch(
+                    headless=settings.get_module_options(current_module)['headless'],    
+                )
+                context = await browser.new_context(
+                    viewport={'width': width, 'height': height},
+                    accept_downloads=accept_download,
+                )
+                context.set_default_timeout(20000)
+                page = await context.new_page()
+                await page.goto(url)
+
+                # 'Solutions' 링크에 hover
+                link = page.get_by_role("banner").get_by_role("link", name="Solutions")
+                await link.hover()  
+                
+                # 탭이 나타날 때까지 기다림
+                d_tab = page.get_by_role("tab", name="Industry")
+                await expect(d_tab).to_be_visible()  
+
+                # 탭 클릭
+                await d_tab.click()
+
+                # 링크에 hover
+                f_link = page.get_by_role("tabpanel").get_by_role("link", name="Manufacturing")
+                await f_link.hover()
+                
+                # 링크 클릭
+                await f_link.click()
+                await page.wait_for_url("https://en.fasoo.com/solutions/manufacturing/")
+
+                # contact us 버튼 클릭 후 팝업 대기
+                async with page.expect_popup() as page12_info:  # 팝업을 기다리고 -> page12_info에 저장
+                    await page.locator(".make-column-clickable-elementor > div").first.click()
+
+                # 팝업 페이지를 page12로 받아옴
+                page12 = await page12_info.value
+
+                # 팝업 페이지에서 필요한 작업을 진행
+                await page12.wait_for_load_state("load")  # 팝업 페이지가 로드될 때까지 대기
+                await page12.wait_for_url("https://en.fasoo.com/contact-us/solution?type=manufacturing")  # URL이 일치할 때까지 대기
+  
+               # 양식 작성하기
+                await page12.get_by_placeholder("Name*").click()
+                await page12.get_by_placeholder("Name*").fill("hqtest1")
+                await page12.get_by_placeholder("Name*").press("Tab")
+                await page12.get_by_placeholder("Company*").fill("hqtest2")
+                await page12.get_by_placeholder("Company*").press("Tab")
+                await page12.get_by_placeholder("Department*").fill("hqtest3")
+                await page12.get_by_placeholder("Department*").press("Tab")
+                await page12.get_by_placeholder("Job Title*").fill("hqtest4")
+                await page12.get_by_placeholder("Job Title*").press("Tab")
+                await page12.get_by_placeholder("Phone*").fill("01011111111")
+                await page12.get_by_placeholder("Phone*").press("Tab")
+                await page12.get_by_placeholder("Email*").fill("hqtest5@fasoo.com")
+                await page12.get_by_placeholder("Email*").press("Tab")
+                await page12.get_by_placeholder("Inquiry Details*  (For a").fill("hello")
+                await page12.get_by_label("Search Engine (Google, Bing,").check()
+                await page12.get_by_label("I'd like Fasoo to use my").check()
+
+                # 상담 신청하기 버튼 클릭
+                #await page12.get_by_role("button", name="Book Now").click()
+
+                return True
+
 
 @module_logging
 @pytest.mark.asyncio
@@ -1937,13 +3879,16 @@ async def test_newLandingPage(settings, test_logger):
     type_a_functions = [wrapsody_contactUs_KR_Main, wrapsodySE_contactUs_KR_Main, wrapsodyDrive_contactUs_KR_Main, AIRPrivacy_contactUs_KR_Main, fdr_contactUs_KR, dspm_contactUs_KR]
     type_b_functions = [fss_contactUs_KR, fsp_contactUs_KR, fsp_contactUs_EN, fed_m_contactUs_KR, fsw_contactUs_KR, fcb_contactUs_KR, fc_br_contactUs_KR, film_contactUs_KR]
     type_c_functions = [wrapsodyECO_contactUs_KR_Main, frv_contactUs_KR, crypto_contactUs_KR]
-
-    # 각 type에서 무작위로 하나의 함수 선택
-    selected_functions = [
-        random.choice(type_a_functions),
-        random.choice(type_b_functions),
-        random.choice(type_c_functions)
-        ]
+    product_functions = [wrapsody_contactUs_EN_Main, wrapsodyECO_contactUs_EN_Main, wrapsodyDrive_contactUs_EN_Main, fed_m_contactUs_EN, fc_br_contactUs_EN, film_contactUs_EN, frv_contactUs_EN, dspm_fdr_contactUs_EN, AIRPrivacy_contactUs_EN_Main]
+    solution_functions = [content_virtualization_EN, content_management_AI_EN, zero_trust_DSP_EN, dspm_EN, enterprise_DRM_EN, print_security_EN, screen_security_EN, cad_file_EN, cloud_security_EN, compliance_EN, insider_threat_EN, ip_protection_EN, remote_worker_EN, unstructured_data_EN, endpoint_security_EN, business_services_EN, energy_EN, financial_EN, healthcare_EN, insurance_EN, public_sector_EN, legal_EN, egnyte_EN, imanage_EN, manufacturing_EN]
+    
+    # 각 type별로 랜덤하게 함수 선택
+    selected_functions = []
+    selected_functions.append(random.choice(type_a_functions))
+    selected_functions.append(random.choice(type_b_functions))
+    selected_functions.append(random.choice(type_c_functions))
+    selected_functions.append(random.choice(product_functions))
+    selected_functions.append(random.choice(solution_functions))
 
     # 선택된 함수들 실행
     for func in selected_functions:
